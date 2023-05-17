@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Info</title>
+    <style>
+      *{
+        font-family: 'Signika Negative', sans-serif;
+      }
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        #section1 {
+          height: 1000px;
+          text-align: center;
+          color: white;
+          font-size: 25px;
+        }
+        
+        #section2 {
+          height: 1000px;
+          font-size: 25px;
+          text-align: center;
+        }
+
+        .main{
+          height:auto;
+          display:inline-block;
+          position:relative;
+          transition:1s;
+        }
+
+        .main img{
+          transition:.6s;
+      }
+  
+        .main:hover img{
+          backdrop-filter: blur(10px);
+          filter: blur(4px);
+          transition: 0.5s ease;
+      }
+   
+        .main :not(img){
+          top:35%;
+          position:absolute;
+          z-index:1;
+          width:80%;
+          text-align:center;
+          color:rgb(255, 255, 255);
+          opacity:0;
+          transition:.3s;
+          background-color:rgba(0, 0, 0, 0.747);
+      }
+
+        .main:hover :not(img){
+          opacity:1;
+      }
+
+        .main2{
+          border: 5px solid #000000;
+          text-align: center;
+        }
+        
+        .overlay{
+            position:fixed;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            background-image: url("map.jpg");
+            filter: blur(1px);
+            z-index: -10;
+        }
+
+        .box{
+            position: absolute;
+            top:40%;
+            left:55%;
+            transform:translate(-50%, -50%);
+            transform:scale(0.7);
+            width: calc(6400px / 8);
+            height: 576px;
+            background: url("gif_sprite.png");
+            animation: animate 1s steps(8) infinite;
+        }
+
+        @keyframes animate{
+            from{
+                background-position: 0;
+            }
+            to
+            {
+                background-position: 6400px;
+            }
+        }
+
+        .event-list{
+          text-align: left;
+          font-size: 35px;
+          margin-left:110px;
+          font-weight: bold;
+        }
+
+        .charity{
+          color:indigo;
+        }
+
+        .protection{
+          color:darkgreen;
+        }
+        </style>
+</head>
+<body style="margin-left: 0px;margin-top: 0px;margin-bottom: 0px;margin-right: 0px;">
+    <div id="section1">
+        <a class = "main" href="#section2">
+          <h5>Sons of Anarchy Motorcycle Club Redwood Original, or as it is better known, SAMCRO (often spelled Sam Crow), is the mother charter of the Sons of Anarchy Motorcycle Club. Located in Charming, California, the club was founded in 1967 by John Teller, Piney Winston, Clay Morrow, Lenny 'The Pimp' Janowitz, Keith McGee, Wally Grazer, Thomas 'Uncle Tom' Whitney, Chico Villanueva and Otto 'Lil' Killer' Moran (First 9).</h5>
+          <img src="/despre_imagine.jpg" width="1920" height="950" alt="">
+        </a>
+    </div>
+    <div class="main2" id="section2">
+      <div class="overlay">
+        <div class="box"></div>
+      </div>
+        <h2>This site is dedicated to Sons of Anarchy MC.</h2>
+        <h3>Here you can find informations about our crew, shop for our merch, or check for the following events.</h3>
+        <ul class="event-list">
+          <li>Anual SOA Ride - 24 March 2022</li>
+          <li>Bikefest Charming - 15 June 2022</li>
+          <li class="charity">CHARITY: Blood Donation - Route 66 ride - 1 July 2022</li>
+          <li class="charity">CHARITY: Money Rise - MC Carnival - 27 July 2022</li>
+          <li class="protection">PROTECTION: Neversea - 10 August 2022</li>
+          <li>Biker = Liberty - 31 August 2022</li>
+        </ul>
+        <ul style="text-decoration: none; color:inherit;">
+          <li><a href="#section1">Get back up.</a></li>
+          <li><a href="/index.html">Home page</a></li>
+        </ul>
+    </div> 
+</body>
+</html>

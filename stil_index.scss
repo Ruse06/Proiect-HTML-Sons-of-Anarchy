@@ -1,0 +1,114 @@
+body {
+  font-family: "Trebuchet MS";
+  font-size: 34px;
+  background-image: url("soa_logo.jpg");
+  background-size: cover;
+  text-align:left;
+  color: red;
+}
+.navbar{
+  position: relative;
+  background-image: linear-gradient(#000000fa ,transparent );
+  color: #fff;
+  height: 70px;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.navbar-container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container{
+  flex: 2;
+}
+
+.logo{
+  height: 70px;
+  margin: auto;
+  display: block;
+  transition: transform .2s;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.menu-container{
+  flex: 4;
+}
+
+.menu-list{
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item{
+  position: relative;
+  margin-right: 40px;
+  transition: transform .5s;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.menu-list-item:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: rgb(207, 19, 19);
+  transform: scale(0, 1);
+}
+
+.menu-list-item:hover{
+  color: rgb(207, 19, 19);
+  transform: scale(1.1);
+}
+
+.menu-list-item:hover::after{
+  transform: scale(1, 2);
+  transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 716px){
+  body {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    background-image: url("soa_logo2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    text-align:left;
+    color: red;
+  }
+
+  .navbar{
+    position: relative;
+    background-image: linear-gradient(#000000fa ,transparent );
+    color: #fff;
+    height: 40px;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .logo{
+    height: 40px;
+    margin: auto;
+    display: block;
+    transition: transform .2s;
+  }
+  
+  .menu-container{
+    flex: 9;
+  }
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "Products/vest.jpg",
+        "name": "Sons of Anarchy Vest",
+        "price": "350.00",
+        "quantity": 0
+    },
+    
+    {
+        "id": 2,
+        "image": "Products/t-shirt.jpg",
+        "name": "Sons of Anarchy T-Shirt",
+        "price": "100.00",
+        "quantity": 0
+    }
+]

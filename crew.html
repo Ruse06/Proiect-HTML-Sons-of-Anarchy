@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOA Crew</title>
+    <link rel="shortcut icon" href="logo.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .crew_message{
+            font-family: "Trebuchet MS";
+            font-size: 50px;
+            text-align: center;
+            width: 50%;
+            position:sticky;
+            font-weight: bold;
+            margin-top: 351px;
+            margin-bottom: 300px;
+            margin-right: 80px;
+            margin-left: 15px;
+            color:black;
+            float:right;
+            border-radius: 10px;
+            border-style:groove;
+            background-color: yellow;
+        }
+        .crew_images{
+            float:left;
+            position:sticky;
+            margin-left: 200px;
+            margin-top: 200px;
+            margin-bottom: 210px;
+            border: 3px solid yellow;
+            border-radius: 50%;
+            z-index: -2;
+        }
+        #output img{
+            height:auto;
+            filter: blur(7px);
+            position:fixed;
+            z-index: -11;
+        }
+        
+        .crown{
+            margin-top: 200px;
+            margin-left: -225px;
+            z-index: 10;
+            transform: rotate(-20deg);
+        }
+    </style>
+</head>
+
+<body style="margin-left: 0px;margin-top: 0px;margin-bottom: 0px;margin-right: 0px;">
+    <div id="output">
+        <img src="soa_crew.jpg" alt="">
+        <script src="crew.js"></script>
+    </div>
+
+    <svg class = "crown" width="61" height="46">
+        <g transform="matrix(0.08984375 0 0 0.08984375 7.5000014 -0)">
+            <path d="M0 443.733L0 68.267L17.067 68.267L136.533 187.733L256 68.267L375.467 187.733L494.933 68.267L512 68.267L512 443.733L0 443.733" stroke="none" fill="yellow" fill-rule="nonzero"/>
+            <path d="M494.933 68.267L375.467 187.733L256.002 68.267L256 68.267L256 443.733L512 443.733L512 68.267L494.933 68.267" stroke="none" fill="yellow" fill-rule="nonzero"/>
+        </g>
+    </svg>
+    
+</body>
+</html>
